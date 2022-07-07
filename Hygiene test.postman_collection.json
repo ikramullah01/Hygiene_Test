@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "7a1ac88b-d4c3-49cd-b292-e9f74c4b2e6c",
+		"name": "Hygiene test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12762589"
+	},
+	"item": [
+		{
+			"name": "Hygiene test API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "width",
+							"value": "1200",
+							"description": "width of the package",
+							"type": "text"
+						},
+						{
+							"key": "length",
+							"value": "300",
+							"description": "length of the package",
+							"type": "text"
+						},
+						{
+							"key": "height",
+							"value": "300",
+							"description": "height of the package",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/size",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"size"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Hygiene test API",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "width",
+									"value": "1200",
+									"description": "width of the package",
+									"type": "text"
+								},
+								{
+									"key": "length",
+									"value": "300",
+									"description": "length of the package",
+									"type": "text"
+								},
+								{
+									"key": "height",
+									"value": "300",
+									"description": "height of the package",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/size",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"size"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 07 Jul 2022 18:44:12 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 07 Jul 2022 18:44:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"The correct box size is\": \"20 FT Container\"\n}"
+				}
+			]
+		}
+	]
+}
